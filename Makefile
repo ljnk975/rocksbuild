@@ -108,6 +108,10 @@ ifeq ($(strip $(OSVERSION)),8)
 # ROCKS8
 SRCROLL=core
 endif
+ifeq ($(strip $(OSVERSION)),9)
+# ROCKS9
+SRCROLL=core
+endif
 
 -include $(ROLLSROOT)/etc/Rolls.mk
 -include Rolls.mk
